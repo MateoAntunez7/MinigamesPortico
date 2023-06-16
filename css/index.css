@@ -1,0 +1,148 @@
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+
+  /* card */
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.75rem;
+    background-color: white;
+    width: 600px;
+    height: 470px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),
+    0 2px 4px -2px rgba(0,0,0,.1);
+  }
+  
+  .header {
+    position: relative;
+    background-clip: border-box;
+    background: url('../images/consola-arcade-estilo-pixel-art_475147-1125.avif') black no-repeat center center scroll;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.75rem;
+    background-image: sr;
+    background-color: rgb(33 150 243);
+    box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+    height: 14rem;
+  }
+  
+  .info {
+    border: none;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .title {
+    color: rgb(38 50 56);
+    letter-spacing: 0;
+    line-height: 1.375;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer {
+    padding: 0.75rem;
+    border: 1px solid rgb(236 239 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 140, 255, 0.082);
+  }
+  
+  .tag {
+    font-weight: 300;
+    font-size: .75rem;
+    display: block;
+  }
+  
+  .action {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(33 150 243);
+    border-radius: 0.5rem;
+  }
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('../images/5d70a237b1d9e.jpg') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 0.75rem;
+      background-color: white;
+      width: 300px;
+      height: 370px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),
+      0 2px 4px -2px rgba(0,0,0,.1);
+    }
+  }
+
+  
+ 
+  
+  
+
+  
+
+  

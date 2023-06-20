@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap");
+
+$number-of-movies: 20;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: #C8E6C9;
+  // background image from Hero Patterns
+  background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.25"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+  color: hsl(267, 75%, 20%);
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  padding: 1em 0.75em;
+}
+
+.space {
+  width: 100%;
+  height: 1px;
+  flex: 1 0 100%;
+}
+
+.wrapper {
+  padding: 1em 1.5em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main.wrapper {
+  margin-top: 2.5em;
+}
+
+footer.wrapper {
+  border-top: 2px solid currentcolor;
+  margin-top: 4em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em 0.5em;
+}
+
+input[type="text"] {
+  display: block;
+  width: 2em;
+  height: 2em;
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  outline: 2px solid currentcolor;
+
+  &:focus {
+    outline-style: dashed;
+  }
+
+  &:valid {
+    outline-color: #43A047;
+  }
+
+  &:invalid ~ label {
+    visibility: hidden;
+  }
+}
+
+.levels > .movie:first-child {
+  padding: 1em;
+}
+
+.movie, .congrats {
+  display: grid;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  gap: 2em;
+}
+
+.congrats {
+  font-size: 1.25em;
+}
+
+label {
+  display: inline-block;
+  border: 2px solid currentcolor;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffcc80;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+@for $i from 0 through $number-of-movies {
+  [id="movie-#{$i}"]:not(:checked) + .movie-#{$i} > .container > .letter,
+  [id="movie-#{$i}"]:not(:checked) + .movie-#{$i} > .container > label,
+  [id="movie-#{$i}"]:not(:checked) + .movie-#{$i} > .container > .space,
+  [id="movie-#{$i}"]:not(:checked) + .movie-#{$i} > h2 {
+    display: none;
+  }
+
+  [id="movie-#{$i}"]:not(:checked) + .movie-#{$i},
+  [id="movie-#{$i}"]:not(:checked) + .movie-#{$i} > .container {
+    gap: 0;
+  }
+}
+
+[id="movie-#{$number-of-movies}"]:not(:checked) + .congrats {
+  display: none;
+}

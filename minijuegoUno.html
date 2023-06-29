@@ -5,6 +5,7 @@
   <title>Adivina La Pelicula</title>
   <link rel="stylesheet" href="css/style.css">
   
+  
   <script>
     (function (s, e, n, d, er) {
       s['Sender'] = er;
@@ -25,8 +26,17 @@
 <!-- partial:index.partial.html -->
 <div class="game-container">
   <header class="wrapper">
-    <h1>Adivina La Pelicula</h1>
-    <p><small>Pórtico</small></p>
+    
+    <h1 style="color: #ffff;">Adivina La Pelicula</h1>
+    <p style="color: #ffffff; font-family: 'Times New Roman', Times, serif;" > <small>Pórtico</small></p>
+    <br>
+    <br>
+    <br>
+    <div style="background-color:#ffff ; border-radius: 5%;">
+      <h3> Anotaciones </h3>
+      <P>1 letra por casillero</P>
+      <p> si la letra es la correcta <br>el casillero se volvera verde</p>
+    </div>
   </header>
   <main class="levels wrapper">
     <input type="radio" id="movie-0" name="next" checked="checked"/>
@@ -101,20 +111,7 @@
                       <div class="space"></div>
                    
                     <div class="space"></div>
-                    <label for="movie-4">Next</label>
-                    <input type="radio" id="movie-4" name="next"/>
-                    <div class="movie movie-4" id="the-princess and the frog"> 
-                      <h2>🌍 🌿 🚀 👽 💙 🔥 💧 🌌</h2>
-                      <div class="container">
-                        
-                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[vV]{1}$"/>
-                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[tT]{1}$"/>
-                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[rR]{1}$"/>
-
-                        <div class="space"></div>
+                   
                         <label for="movie-5">Next</label>
                         <input type="radio" id="movie-5" name="next"/>
                         <div class="movie movie-5" id="ratatouille"> 
@@ -181,43 +178,7 @@
                                     
                                     
                                     <div class="space"></div>
-                                    <label for="movie-8">Next</label>
-                                    <input type="radio" id="movie-8" name="next"/>
-                                    <div class="movie movie-8" id="edward-scissorhands"> 
-                                      <h2>🚀🌌⏳🌾🧑‍🚀🕳️🧭🌟</h2>
-                                      <div class="container">
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[iI]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[nN]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[tT]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[eE]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[rR]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[eE]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[sS]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[tT]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[eE]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[lL]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                                        <input class="letter" type="text" required="required" maxlength="1" pattern="^[rR]{1}$"/>
-                                        
-                                        <div class="space"></div>
-                                        <label for="movie-9">Next</label>
-                                        <input type="radio" id="movie-9" name="next"/>
-                                        <div class="movie movie-9" id="puss-in boots"> 
-                                          <h2>🔫🏙️🤖👁️🌃🚁👮‍♂️💔🔍💡</h2>
-                                          <div class="container">
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[bB]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[lL]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[dD]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[eE]{1}$"/>
-                                            <div class="space"></div>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[rR]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[uU]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[nN]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[nN]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[eE]{1}$"/>
-                                            <input class="letter" type="text" required="required" maxlength="1" pattern="^[rR]{1}$"/>
-                                            <div class="space"></div>
+                                    
                                             <label for="movie-10">Next</label>
                                             <input type="radio" id="movie-10" name="next"/>
                                             <div class="movie movie-10" id="the-silence of the lambs"> 
@@ -248,32 +209,7 @@
                                                 
                                                 <div class="space"></div>
                                                 <label for="movie-11">Next</label>
-                                                <input type="radio" id="movie-11" name="next"/>
-                                                <div class="movie movie-11" id="twilight"> 
-                                                  <h2>👽🚀💥🔫🌌🌍🌟🏢💣👾🌠</h2>
-                                                  <div class="container">
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[mM]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[rR]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[cC]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[iI]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[nN]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[oO]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[sS]{1}$"/>
-                                                    <div class="space"></div>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[lL]{1}$"/>
-
-                                                    <div class="space"></div>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[tT]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[aA]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[qQ]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[uU]{1}$"/>
-                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[eE]{1}$"/>
-
-                                                    <div class="space"></div>
+                                                
                                                     <label for="movie-12">Next</label>
                                                     <input type="radio" id="movie-12" name="next"/>
                                                     <div class="movie movie-12" id="the-king's speech"> 
@@ -315,29 +251,7 @@
                                                                 <input class="letter" type="text" required="required" maxlength="1" pattern="^[oO]{1}$"/>
                                                                 <input class="letter" type="text" required="required" maxlength="1" pattern="^[rR]{1}$"/>
                                                                 <div class="space"></div>
-                                                                <label for="movie-15">Next</label>
-                                                                <input type="radio" id="movie-15" name="next"/>
-                                                                <div class="movie movie-15" id="cinderella"> 
-                                                                  <h2>👻🐚🤖💻🔍🌆🌌👁️💥🔓</h2>
-                                                                  <div class="container">
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[gG]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[hH]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[oO]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[sS]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[tT]{1}$"/>
-                                                                    <div class="space"></div>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[iI]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[nN]{1}$"/>
-                                                                    <div class="space"></div>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[tT]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[hH]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[eE]{1}$"/>
-                                                                    <div class="space"></div>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[sS]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[hH]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[eE]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[lL]{1}$"/>
-                                                                    <input class="letter" type="text" required="required" maxlength="1" pattern="^[lL]{1}$"/>
+                                                                
                                                                     <div class="space"></div>
                                                                     <label for="movie-16">Next</label>
                                                                     <input type="radio" id="movie-16" name="next"/>
@@ -373,7 +287,7 @@
                                                                         <label for="movie-17">Next</label>
                                                                         <input type="radio" id="movie-17" name="next"/>
                                                                         <div class="movie movie-17" id="la-la land"> 
-                                                                          <h2>🤖 🏙️ 🔍 🔬 👮 🤔 💥 🌆</h2>
+                                                                          <h2> 🏙️ 🔍🤖🦿🏃🏿‍♂️ 🔬 👮 🤔 💥 🌆</h2>
                                                                           <div class="container">
                                                                             <input class="letter" type="text" required="required" maxlength="1" pattern="^[yY]{1}$"/>
                                                                             <input class="letter" type="text" required="required" maxlength="1" pattern="^[oO]{1}$"/>
@@ -424,8 +338,13 @@
                                                                                     <label for="movie-20">Next</label>
                                                                                     <input type="radio" id="movie-20" name="next"/>
                                                                                     <div class="congrats">
-                                                                                      <p>!Felicidades! Has terminado el minijuego</p>
-                                                                                      <div style="text-align: left" class="sender-form-field" data-sender-form-id="li0lckjjaovnye2s7c1"></div>
+                                                                                      <h1>Felicidades Has terminado el minijuego</h1>
+                                                                                      <p>¡Es momento de realizar el quiz da click en el boton!</p>
+                                                                                      <div>
+                                                                                      <button onclick="window.location.href = 'https://mateoantunez7.github.io/PorticoQuiz/';" class="btn"> Ir al Quiz
+                                                                                      </button>
+                                                                                      </div>
+                                                                                      <div style="text-align: center" class="sender-form-field" data-sender-form-id="li0lckjjaovnye2s7c1"></div>
                                                                                     </div>
                                                                                   </div>
                                                                                 </div>

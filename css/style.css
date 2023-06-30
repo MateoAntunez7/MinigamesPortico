@@ -396,3 +396,8 @@ input[type=radio] {
  }
  
  
+ .white-background {
+  display: inline;
+  background-color: white;
+  padding: 0;
+}
